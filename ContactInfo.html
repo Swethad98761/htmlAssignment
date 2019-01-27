@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       body {
-        background-image: url(./images/bgimage.jpg);
+        background-image: url(./images/bgimage10.jpg);
         font-family: Arial;
         padding: 0;
         margin: 0;
@@ -15,34 +15,34 @@
       .tab {
         overflow: hidden;
         border: 1px solid #ccc;
-        background-color: #f1f1f1;
+        background-color: #531a8c;
       }
 
       /* Style the buttons inside the tab */
       .tab button {
-        background-color: inherit;
+        background-color: #531a8c;
         float: left;
         border: none;
         outline: none;
         cursor: pointer;
-        padding: 14px 16px;
+        padding: 18px 70px;
         transition: 0.3s;
-        font-size: 17px;
+        font-size: 18px;
       }
 
       /* Change background color of buttons on hover */
       .tab button:hover {
-        background-color: #ddd;
+        background-color: #a861ef;
       }
 
       /* Create an active/current tablink class */
       .tab button.active {
-        background-color: #ccc;
+        background-color: #531a8c;
       }
 
       /* Style the tab content */
       .tabcontent {
-        padding: 6px 130px;
+        padding: 50px 100px;
       }
       input[type="text"],
       select {
@@ -57,7 +57,7 @@
 
       input[type="submit"] {
         width: 300px;
-        background-color: #4caf50;
+        background-color: #531a8c;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -67,32 +67,46 @@
       }
 
       input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: #a861ef;
+      }
+      div.relative {
+        position: relative;
+        left: 500px;
+        bottom: 200px;
+      }
+      div.relativeForIcons {
+        position: relative;
+        left: 160px;
+        bottom: 90px;
       }
     </style>
   </head>
   <body>
     <div class="tab">
       <button class="tablinks">
-        <a href="./home.html" style="text-decoration: none;">Home</a>
+        <a href="./home.html" style="text-decoration: none; color:white"
+          >Home</a
+        >
       </button>
       <button class="tablinks">
-        <a href="./PersonalInfo.html" style="text-decoration: none;"
+        <a href="./PersonalInfo.html" style="text-decoration: none; color:white"
           >About Me</a
         >
       </button>
       <button class="tablinks">
-        <a href="./ContactInfo.html" style="text-decoration: none;"
+        <a href="./ContactInfo.html" style="text-decoration: none; color:white"
           >Contact Me</a
         >
       </button>
       <button class="tablinks">
-        <a href="./Gallery.html" style="text-decoration: none;">Gallery</a>
+        <a href="./Gallery.html" style="text-decoration: none; color:white"
+          >Gallery</a
+        >
       </button>
     </div>
     <div class="tabcontent">
       <h2>
-        <font color="purple">
+        <font color="#531a8c">
           <form action="/action_page.php">
             <label for="Name">Name</label>
             <input
@@ -116,7 +130,46 @@
               <option value="male">Male</option>
             </select>
             <br />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" /> <br /><br />
+            <i>Gmail:swethad98761@gmail.com</i> <br />
+            <div class="relative">
+              <img src="./images/arrow.jpeg" height="100px" width="100px" />
+              <div class="relativeForIcons">
+                <a
+                  href="https://www.instagram.com/sony_swetha/"
+                  style="text-decoration:none"
+                >
+                  <img
+                    src="./images/instagram.png"
+                    width="70px"
+                    height="70px"
+                    hspace="10px"
+                  />
+                </a>
+                <a
+                  href="https://mail.google.com/mail/u/?authuser=swethad98761@gmail.com"
+                  style="text-decoration:none"
+                >
+                  <img
+                    src="./images/gmail.png"
+                    width="70px"
+                    height="70px"
+                    hspace="10px"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/swetha.sony.944"
+                  style="text-decoration:none"
+                >
+                  <img
+                    src="./images/facebook.png"
+                    width="70px"
+                    height="70px"
+                    hspace="10px"
+                  />
+                </a>
+              </div>
+            </div>
           </form>
         </font>
       </h2>
